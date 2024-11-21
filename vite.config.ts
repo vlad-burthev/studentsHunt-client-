@@ -17,6 +17,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         api: "modern",
+        prependData: `@use "/src/assets/styles/_variables.scss" as *;`,
       },
     },
   },
